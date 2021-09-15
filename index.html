@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://unpkg.com/@r2u/javascript-ar-sdk/dist/index.js'></script>
+</head>
+<body>
+    <!-- if you open on mobile, contents of this next div will be replaced with the button "veja na sua casa" -->
+    <div class="r2u" id="r2u">
+        <div class="modal-RA">
+            <img id="ar-button" src="https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Far.png?v=1627065371842"/>
+            <div id="modal" hidden>
+                <span> Escaneie o código QR abaixo e veja o produto na sua casa! </span>
+                <!-- container to qrcode -->
+                <div id="r2u-qrcode"></div>
+            </div>
+        </div>
+        <!-- container to the viewer -->
+        <div id="r2u-viewer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@media only screen and (min-width: 1024px) {
+    .r2u {
+      width: 100%;
+      height: 300px;
+      float: left;
+      padding: 10px;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  
+  #button-ar {
+    border: 2px solid #0c0e5a;
+    width: 230px;
+    padding: 1em;
+    border-radius: 5px;
+    color: #0c0e5a;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    /*.r2u {
+      --src: url("https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Fpg-de-produto_veja_na_sua_casa.png?v=1628013250650");
+      position: relative;
+      height: 59px;
+      margin: 20px 20px 0px 16px;
+      background: var(--src) center center/contain no-repeat;
+    }*/
+    
+    #button-ar {
+      display: block;
+    }
+  }
+  
+  .modal-RA {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #r2u-viewer {
+    width: 90%;
+    height: 100%;
+  }
+  
+  #modal {
+    background-color: #dfdfdf;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    margin: auto;
+  }
+  
+  #ar-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  
+  #realidade-aumentada {
+      border-radius: 16px !important;
+      border: 2px solid #0c0e5a !important;
+  }
