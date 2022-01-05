@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <title>Document</title>
     <script src='https://unpkg.com/@r2u/javascript-ar-sdk/dist/index.js'></script>
 </head>
+
 <body>
     <!-- if you open on mobile, contents of this next div will be replaced with the button "veja na sua casa" -->
     <div class="r2u" id="r2u">
         <div class="modal-RA">
-            <img id="ar-button" src="https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Far.png?v=1627065371842"/>
+            <img id="ar-button"
+                src="https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Far.png?v=1627065371842" />
             <div id="modal" hidden>
                 <span> Escaneie o código QR abaixo e veja o produto na sua casa! </span>
                 <!-- container to qrcode -->
@@ -21,5 +24,16 @@
         <!-- container to the viewer -->
         <div id="r2u-viewer"></div>
     </div>
+
+    <h4 style="text-align: center; padding-bottom: 0.5em;">Visualize nosso colchão em 3D na sua casa</h4>
+    <p class="cardText" style="text-align: center; color: black; padding-bottom: 1.2em;">Veja todos os ângulos do
+        produto utilizando nossa imagem 3D.</p>
+    <p class="cardText visualizarAgora" style="text-align: center;"><u><a class="pp"
+                href="https://www.guldi.com.br/wp-content/uploads/2021/09/popup-ra-compress.png" target="_blank"
+                rel="noopener noreferrer">Visualizar agora &gt;</a></u></p>
+    
+    <script src="./script.js"></script>
+    <script src="./responsive.js"></script>
 </body>
+
 </html>
