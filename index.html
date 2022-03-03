@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realidade Aumentada</title>
+  <!-- Script do SDK -->
+  <script src='https://unpkg.com/@r2u/javascript-ar-sdk@6.5.9/dist/index.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="icon-3d" onclick="openModal3D()">3D</div>
+  <div id="change-sku">Change</div>
+
+  <select name="" id="matress-size">
+    <option value="1">solteiro</option>
+    <option value="2">casal</option>
+    <option value="3">king</option>
+  </select>
+
+  <div class="ra-background">
+    <!-- if you open on mobile, contents of this next div will be replaced with the button "veja na sua casa" -->
+    <div class="r2u" id="r2u">
+      <!-- modal to show qrcode -->
+      <div class="modal">
+        <img id="ar-button" src="https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Far.png?v=1627065371842"
+          width="30" height="30" />
+        <div id="modal" hidden>
+          <span>
+            Escaneie o código QR abaixo e veja o produto na sua
+            casa!
+          </span>
+          <!-- container to qrcode -->
+          <div id="r2u-qrcode"></div>
+        </div>
+      </div>
+      <div class="close-popup" onclick="closePopup3D()">X</div>
+      <!-- container to the viewer -->
+      <div id="r2u-viewer"></div>
+    </div>
+  </div>
+
+  <script src="./open_popup.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
