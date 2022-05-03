@@ -1,0 +1,28 @@
+<div class="ra-background">
+    <!-- if you open on mobile, contents of the next div will be replaced with the button "veja na sua casa" -->
+    <div class="r2u" id="r2u">
+        <div class="see-at-home" id="augmented-reality">
+            <p>Veja em casa</p>
+        </div>
+
+        <!-- modal to show qrcode -->
+        <div class="modal">
+            <img id="ar-button"
+                src="https://cdn.glitch.com/4b55baa8-00f2-4c10-8599-f51af783bbe7%2Far.png?v=1627065371842" width="30"
+                height="30" />
+            <div id="modal" hidden>
+                <span>
+                    Escaneie o código QR abaixo e veja o produto na sua
+                    casa!
+                </span>
+                <!-- container to qrcode -->
+                <div id="r2u-qrcode"></div>
+            </div>
+        </div>
+
+        <div class="close-popup" onclick="close_pop_up_3d()"><img src="https://sdk.r2u.io/assets/exit-icon.png"></div>
+
+        <!-- container to the viewer -->
+        <div id="r2u-viewer"></div>
+    </div>
+</div>
